@@ -1,0 +1,95 @@
+$break_xs: 320px;
+$break_sm: 576px;
+$break_md: 768px;
+$break_lg: 992px;
+$break_xl: 1200px;
+
+$xs_width: auto;
+$sm_width: 520px;
+$md_width: 640px;
+$lg_width: 960px;
+$xl_width: auto;
+
+
+
+$container_padding: 0;
+
+//Breakpoints mixins
+@mixin break-xs(){
+    @media (min-width: $break_xs){
+        @content;
+    }
+}
+
+@mixin break-sm(){
+    @media (min-width: $break_sm){
+        @content;
+    }
+}
+
+
+@mixin break-md(){
+    @media (min-width: $break_md){
+        @content;
+    }
+}
+
+
+@mixin break-lg(){
+    @media (min-width: $break_lg){
+        @content;
+    }
+}
+
+
+
+//Container mixins
+@mixin container-positioning(){
+    padding-left: $container_padding;
+    padding-right: $container_padding;
+}
+
+@mixin container(){
+    margin: 0 auto;
+    @include container-positioning();
+}
+
+@mixin size-xs(){
+    @media (min-width: $break_xs){
+        max-width: $xs_width;
+    }
+}
+
+@mixin size-sm(){
+    @media (min-width: $break_sm){
+        max-width: $sm_width;
+    }
+}
+
+@mixin size-md(){
+    @media (min-width: $break_md){
+        max-width: $md_width;
+    }
+}
+
+
+@mixin size-lg(){
+    @media (min-width: $break_lg){
+        max-width: $lg_width;
+    }
+}
+
+@mixin size-xl(){
+    @media (min-width: $break_xl){
+        max-width: $xl_width;
+    }
+}
+
+
+//List Mixins
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
