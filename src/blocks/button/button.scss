@@ -1,0 +1,24 @@
+//!BUTTON
+.button {
+  padding: 13px 20px;
+  font-family: "Latto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+}
+.button--theme-secondary-yellow {
+  color: #f7941e;
+  border-color: #f7941e;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #f7941e;
+    color: #ffffff;
+  }
+}

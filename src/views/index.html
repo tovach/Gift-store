@@ -29,12 +29,13 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__nav-bar nav-bar">
-        <div class="nav-bar__logo logo">
-          <h5 class="logo__text">Logo</h5>
-        </div>
-        <nav class="nav-bar__site-nav site-nav">
+    <header class="header container">
+      <div class="header__logo logo">
+        <h5 class="logo__text"><a href="#">Logo</a></h5>
+      </div>
+
+      <div class="header__nab-bar nav-bar">
+        <nav class="site-nav">
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="#" class="site-nav__link">Home</a>
@@ -50,8 +51,15 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button button button--theme-secondary-yellow" type="button">Gift Finder</button>
+
+        <div class="nav-bar__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+
+      <button class="header__button button button--theme-secondary-yellow" type="button">Gift Finder</button>
     </header>
 
     <main class="main">
@@ -59,25 +67,28 @@
         <div class="hero__wrapper">
           <div class="hero__card text-card">
             <h5 class="text-card__title">Find a gift for your wife or girlfriend</h5>
-            <p class="text-card__text">Struggling to find a gift for your wife or girlfriend?
-              No problem!</p>
+            <p class="text-card__text">Struggling to find a gift for your wife or girlfriend? No problem!</p>
             <a href="#" class="text-card__button-link button-link button-link--theme-primary">Find gift now</a>
           </div>
           <div class="hero__card img-card">
             <picture>
-              <source srcset="img/img-card/item-01.webp" type="image/webp">
-              <img class="img-card__img" src="img/img-card/item-01.jpg" alt="Lorem ipsum">
+              <source srcset="img/img-card/item-01.webp" type="image/webp" />
+              <img class="img-card__img" src="img/img-card/item-01.jpg" alt="Lorem ipsum" />
             </picture>
           </div>
           <div class="hero__card img-card">
             <picture>
-              <source srcset="img/img-card/item-02.webp" type="image/webp">
-              <img class="img-card__img" src="img/img-card/item-02.jpg" alt="Lorem ipsum">
+              <source srcset="img/img-card/item-02.webp" type="image/webp" />
+              <img class="img-card__img" src="img/img-card/item-02.jpg" alt="Lorem ipsum" />
             </picture>
           </div>
           <div class="hero__card text-card">
             <h5 class="text-card__title">How we work</h5>
-            <p class="text-card__text">We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.</p>
+            <p class="text-card__text">
+              We’ve actually already asked hundreds of women what they want, and made a database with the results. All
+              you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match
+              you with a few perfect gift options.
+            </p>
             <a class="text-card__button-link button-link button-link--theme-secondary" href="#">Learn More</a>
           </div>
         </div>
@@ -90,42 +101,42 @@
             <li class="cards-occasions__item item-occasions">
               <div class="item-occasions__img">
                 <picture>
-                  <source srcset="img/item-occasions/item-01.webp" type="image/webp">
-                  <img src="img/item-occasions/item-01.jpg" alt="Lorem ipsum">
+                  <source srcset="img/item-occasions/item-01.webp" type="image/webp" />
+                  <img src="img/item-occasions/item-01.jpg" alt="Lorem ipsum" />
                 </picture>
               </div>
               <h5 class="item-occasions__title">Birthday</h5>
-              <a class="item-occasions__link" href="#" >See More</a>
+              <a class="item-occasions__link" href="#">See More</a>
             </li>
             <li class="cards-occasions__item item-occasions">
               <div class="item-occasions__img">
                 <picture>
-                  <source srcset="img/item-occasions/item-02.webp" type="image/webp">
-                  <img src="img/item-occasions/item-02.jpg" alt="Lorem ipsum">
+                  <source srcset="img/item-occasions/item-02.webp" type="image/webp" />
+                  <img src="img/item-occasions/item-02.jpg" alt="Lorem ipsum" />
                 </picture>
               </div>
               <h5 class="item-occasions__title">Anniversary</h5>
-              <a class="item-occasions__link" href="#" >See More</a>
+              <a class="item-occasions__link" href="#">See More</a>
             </li>
             <li class="cards-occasions__item item-occasions">
               <div class="item-occasions__img">
                 <picture>
-                  <source srcset="img/item-occasions/item-03.webp" type="image/webp">
-                  <img src="img/item-occasions/item-03.jpg" alt="Lorem ipsum">
+                  <source srcset="img/item-occasions/item-03.webp" type="image/webp" />
+                  <img src="img/item-occasions/item-03.jpg" alt="Lorem ipsum" />
                 </picture>
               </div>
               <h5 class="item-occasions__title">Valentine's Day</h5>
-              <a class="item-occasions__link" href="#" >See More</a>
+              <a class="item-occasions__link" href="#">See More</a>
             </li>
             <li class="cards-occasions__item item-occasions">
               <div class="item-occasions__img">
                 <picture>
-                  <source srcset="img/item-occasions/item-04.webp" type="image/webp">
-                  <img src="img/item-occasions/item-04.jpg" alt="Lorem ipsum">
+                  <source srcset="img/item-occasions/item-04.webp" type="image/webp" />
+                  <img src="img/item-occasions/item-04.jpg" alt="Lorem ipsum" />
                 </picture>
               </div>
               <h5 class="item-occasions__title">Christmas</h5>
-              <a class="item-occasions__link" href="#" >See More</a>
+              <a class="item-occasions__link" href="#">See More</a>
             </li>
           </ul>
         </div>
@@ -143,8 +154,8 @@
           <article class="article-pinned">
             <div class="article-pinned__img">
               <picture>
-                <source srcset="img/article-pinned/item-01.webp" type="image/webp">
-                <img src="img/article-pinned/item-01.jpg" alt="Lorem ipsum">
+                <source srcset="img/article-pinned/item-01.webp" type="image/webp" />
+                <img src="img/article-pinned/item-01.jpg" alt="Lorem ipsum" />
               </picture>
             </div>
             <div class="article-pinned__wrapper">
@@ -158,14 +169,20 @@
               <li class="last-articles__item">
                 <article class="last-article">
                   <h5 class="last-article__title">Database to find the gifts for your girlfriend</h5>
-                  <p class="last-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                  <p class="last-article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore...
+                  </p>
                   <a class="last-article__link" href="#">Read More</a>
                 </article>
               </li>
               <li class="last-articles__item">
                 <article class="last-article">
                   <h5 class="last-article__title">How Artificial Intelligence read your mind to find the best gift</h5>
-                  <p class="last-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                  <p class="last-article__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore...
+                  </p>
                   <a class="last-article__link" href="#">Read More</a>
                 </article>
               </li>
@@ -179,58 +196,58 @@
       <div class="footer__site-nav footer-nav">
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#" >Home</a>
+            <a class="footer-nav__link" href="#">Home</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#" >About</a>
+            <a class="footer-nav__link" href="#">About</a>
           </li>
           <li class="footer-nav__item logo logo--theme-footer">
             <h5 class="logo__text">Logo</h5>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#" >Service</a>
+            <a class="footer-nav__link" href="#">Service</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#" >Blog</a>
+            <a class="footer-nav__link" href="#">Blog</a>
           </li>
         </ul>
       </div>
-      <hr class="footer__divider">
+      <hr class="footer__divider" />
 
       <div class="footer__socials socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link" href="#"  aria-label="Facebook">
-              <img src="img/socials/fb.svg" alt="Facebook">
+            <a class="socials__link" href="#" aria-label="Facebook">
+              <img src="img/socials/fb.svg" alt="Facebook" />
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#"  aria-label="Twitter">
-              <img src="img/socials/twitter.svg" alt="Twitter">
+            <a class="socials__link" href="#" aria-label="Twitter">
+              <img src="img/socials/twitter.svg" alt="Twitter" />
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#"  aria-label="Instagram">
-              <img src="img/socials/insta.svg" alt="Instagram">
+            <a class="socials__link" href="#" aria-label="Instagram">
+              <img src="img/socials/insta.svg" alt="Instagram" />
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#"  aria-label="Youtube">
-              <img src="img/socials/yt.svg" alt="Youtube">
+            <a class="socials__link" href="#" aria-label="Youtube">
+              <img src="img/socials/yt.svg" alt="Youtube" />
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#"  aria-label="Pinterest">
-              <img src="img/socials/pinterest.svg" alt="Pinterest">
+            <a class="socials__link" href="#" aria-label="Pinterest">
+              <img src="img/socials/pinterest.svg" alt="Pinterest" />
             </a>
           </li>
         </ul>
       </div>
-      
+
       <span class="footer__copyright">© 2010 — 2020</span>
-      <a class="footer__terms" href="#" >Privacy - Terms</a>
+      <a class="footer__terms" href="#">Privacy - Terms</a>
     </footer>
-    
+
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
   </body>
