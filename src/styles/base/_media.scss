@@ -39,3 +39,28 @@
     }
   }
 }
+// !MAIN
+.main {
+  &__hero {
+  }
+}
+
+// !HERO
+.hero {
+  &__wrapper {
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 720px));
+    }
+
+    &__card {
+    }
+  }
+}
+
+.img-card {
+  @media (max-width: 1024px) {
+    &:nth-child(2n) {
+      order: 3;
+    }
+  }
+}

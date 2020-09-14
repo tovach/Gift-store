@@ -9,16 +9,52 @@
 
   background: transparent;
   border: 1px solid transparent;
+  border-radius: 5px;
 
   cursor: pointer;
 }
 .button--theme-secondary-yellow {
   color: #f7941e;
   border-color: #f7941e;
-  border-radius: 5px;
 
   &:hover {
     background-color: #f7941e;
     color: #ffffff;
+  }
+}
+
+.button--theme-link-primary {
+  display: flex;
+  justify-content: center;
+  padding: 23px;
+  background-color: #f7941e;
+
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+
+    color: #f7941e;
+    border-color: #f7941e;
+
+    text-decoration: none;
+  }
+}
+
+.button--theme-link-secondary {
+  display: flex;
+  justify-content: center;
+  padding: 23px;
+  background-color: #ffffff;
+
+  color: #f7941e;
+
+  &:hover {
+    background-color: #f7941e;
+
+    color: #ffffff;
+    border-color: #f7941e;
+
+    text-decoration: none;
   }
 }

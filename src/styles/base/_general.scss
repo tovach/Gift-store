@@ -4,10 +4,12 @@ html {
 
 body {
   max-width: 1440px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "Lato", sans-serif;
+
+  color: #000000;
 }
 
 *,
@@ -162,8 +164,156 @@ img {
   display: flex;
 }
 
+//!MAIN
 .main {
-  display: none;
+  &__hero {
+  }
+
+  &__occasions {
+    display: none;
+  }
+
+  &__banner {
+    display: none;
+  }
+
+  &__blogs {
+    display: none;
+  }
+}
+
+//!HERO
+.hero {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 50%));
+    justify-content: center;
+  }
+
+  &__card {
+    max-height: 700px;
+  }
+}
+
+.text-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f2;
+  &__wrapper {
+    max-width: 410px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: calc(32px + 24 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 69px;
+    margin-bottom: 36px;
+  }
+
+  &__text {
+    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__button-link {
+    max-width: 200px;
+  }
+}
+
+.img-card {
+  &__img {
+  }
+}
+
+// !OCASSIONS
+.occasions {
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__cards {
+  }
+}
+.cards-occasions {
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.item-occasions {
+  &__img {
+  }
+
+  &__title {
+  }
+
+  &__link {
+  }
+}
+
+// !BANNER
+.banner {
+  &__title {
+  }
+
+  &__cta {
+  }
+
+  &__button {
+  }
+}
+
+// !BLOGS
+.blogs {
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__wrapper {
+  }
+}
+.article-pinned {
+  &__img {
+  }
+
+  &__wrapper {
+  }
+
+  &__author {
+  }
+
+  &__title {
+  }
+
+  &__link {
+  }
+}
+.last-articles {
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.last-article {
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__link {
+  }
 }
 
 .footer {
