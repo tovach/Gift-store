@@ -51,8 +51,11 @@
     @media (max-width: 1024px) {
       grid-template-columns: repeat(auto-fit, minmax(250px, 720px));
     }
+  }
 
-    &__card {
+  &__card {
+    @media (max-width: 768px) {
+      height: auto;
     }
   }
 }
@@ -62,5 +65,34 @@
     &:nth-child(2n) {
       order: 3;
     }
+  }
+}
+
+// !OCASSIONS
+.occasions {
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__cards {
+  }
+}
+.cards-occasions {
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.item-occasions {
+  &__img {
+  }
+
+  &__title {
+  }
+
+  &__link {
   }
 }

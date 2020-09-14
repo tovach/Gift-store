@@ -170,7 +170,6 @@ img {
   }
 
   &__occasions {
-    display: none;
   }
 
   &__banner {
@@ -191,7 +190,8 @@ img {
   }
 
   &__card {
-    max-height: 700px;
+    height: 525px;
+    overflow: hidden;
   }
 }
 
@@ -232,30 +232,71 @@ img {
 
 // !OCASSIONS
 .occasions {
+  min-height: 820px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   &__title {
+    font-size: 32px;
+    line-height: 38px;
+
+    text-align: center;
   }
 
   &__description {
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
   }
 
   &__cards {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .cards-occasions {
   &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 270px));
+    gap: 30px;
+    justify-content: center;
   }
 
   &__item {
   }
 }
 .item-occasions {
+  background-color: #eee;
+
+  &:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+  }
   &__img {
+    width: 270px;
+    height: 270px;
+  }
+  &__text {
+    padding: 25px;
+    height: 166px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
   }
 
   &__title {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   &__link {
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
