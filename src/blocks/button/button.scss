@@ -23,6 +23,27 @@
   }
 }
 
+.button--theme-primary {
+  background: #231f20;
+  color: #ffffff;
+
+  &:hover {
+    background: #ffffff;
+    color: #231f20;
+  }
+}
+
+.button--theme-secondary-black {
+  border-color: #000000;
+
+  color: #000000;
+
+  &:hover {
+    background: #ffffff;
+    color: #231f20;
+  }
+}
+
 .button--theme-link-primary {
   display: flex;
   justify-content: center;

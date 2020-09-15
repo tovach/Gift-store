@@ -173,7 +173,6 @@ img {
   }
 
   &__banner {
-    display: none;
   }
 
   &__blogs {
@@ -302,13 +301,50 @@ img {
 
 // !BANNER
 .banner {
+  padding: 20px;
+  min-height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f7941e;
+
+  &__wrapper {
+    width: 100%;
+
+    max-width: 960px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text-block {
+    max-width: 355px;
+
+    font-size: 32px;
+    line-height: 45px;
+
+    text-align: center;
+  }
+
   &__title {
+    font-weight: 700;
   }
 
   &__cta {
+    font-weight: 400;
+  }
+
+  &__buttons-block {
+    text-align: center;
   }
 
   &__button {
+    margin: 10px;
   }
 }
 

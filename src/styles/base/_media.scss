@@ -96,3 +96,34 @@
   &__link {
   }
 }
+
+// !BANNER
+
+.banner {
+  &__wrapper {
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &__text-block {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+  }
+
+  &__cta {
+  }
+
+  &__buttons-block {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__button {
+  }
+}
