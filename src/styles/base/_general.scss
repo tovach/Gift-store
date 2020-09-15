@@ -75,6 +75,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
 
   &__logo {
   }
@@ -176,7 +177,6 @@ img {
   }
 
   &__blogs {
-    display: none;
   }
 }
 
@@ -350,46 +350,109 @@ img {
 
 // !BLOGS
 .blogs {
+  padding-top: 90px;
   &__title {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+    line-height: 38px;
+
+    text-align: center;
   }
 
   &__description {
+    margin-bottom: 70px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
   }
 
   &__wrapper {
   }
 }
+
 .article-pinned {
-  &__img {
+  min-height: 320px;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  background-color: #000000;
+
+  &__img-block {
+    max-width: 400px;
+    max-height: 370px;
   }
 
-  &__wrapper {
+  &__text-block {
+    margin: 10px auto;
+    padding: 0 20px;
+    max-width: 500px;
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    color: #ffffff;
   }
 
   &__author {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   &__title {
+    font-size: 48px;
+
+    font-size: calc(32px + 16 * ((100vw - 320px) / (1440 - 320)));
+    line-height: 58px;
   }
 
   &__link {
   }
 }
+
 .last-articles {
   &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 570px));
+
+    gap: 30px;
+    justify-content: center;
   }
 
   &__item {
+    padding: 50px;
+
+    &:hover {
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    }
   }
 }
 .last-article {
   &__title {
+    height: 70px;
+    overflow: hidden;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   &__text {
+    font-size: 18px;
+    line-height: 25px;
   }
 
   &__link {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

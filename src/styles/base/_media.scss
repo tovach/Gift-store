@@ -1,3 +1,20 @@
+// !HEADER
+
+.header {
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
+// !MAIN
+.main {
+  @media (max-width: 768px) {
+    margin-top: 115px;
+  }
+}
+
 //!NAV-BAR
 .nav-bar {
   &__burger {
@@ -125,5 +142,52 @@
   }
 
   &__button {
+  }
+}
+
+// !BLOGS
+
+.blogs {
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__wrapper {
+  }
+}
+
+.article-pinned {
+  &__img-block {
+  }
+
+  &__text-block {
+  }
+
+  &__author {
+  }
+
+  &__title {
+  }
+
+  &__link {
+  }
+}
+.last-articles {
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.last-article {
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__link {
   }
 }
