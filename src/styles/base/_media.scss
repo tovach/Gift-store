@@ -2,16 +2,18 @@
 
 .header {
   @media (max-width: 768px) {
+    min-height: 60px;
+    width: 100%;
+
     position: fixed;
     top: 0;
-    width: 100%;
   }
 }
 
 // !MAIN
 .main {
   @media (max-width: 768px) {
-    margin-top: 115px;
+    margin-top: 60px;
   }
 }
 
@@ -28,7 +30,7 @@
 .site-nav {
   @media (max-width: 768px) {
     position: fixed;
-    top: 115px;
+    top: 60px;
     left: -100%;
     min-height: 100vh;
     width: 100%;
@@ -189,5 +191,22 @@
   }
 
   &__link {
+  }
+}
+
+// !FOOTER-NAV
+
+.footer-nav {
+  &__item {
+    @media (max-width: 768px) {
+      margin: 0 10px;
+    }
+  }
+}
+
+// !LOGO
+.logo--theme-footer {
+  @media (max-width: 768px) {
+    margin: 0 10px;
   }
 }
